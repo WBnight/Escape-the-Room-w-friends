@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+/* Authors: Dennis, Matthew and Koji
+ * Date Created: September 18, 2018
+ * Public class: Roomattempt1
+ */
+public class Roomattempt1 {
+	// some kind of puzzle escape the room game
+	public static void main(String[] args) {
+		System.out.println("You are in a dark room");
+		System.out.println("You can tell that the walls look ancient");
+		System.out.println("On the right wall 'Escape or die' is written");
+		System.out.println("");
+		Scanner pin = new Scanner(System.in);
+
+		while (true) {
+			System.out.println("You can either 1. take a closer look, or 2 attempt to break the windows");
+			if (pin.hasNextInt()) {
+				int qone = pin.nextInt();
+				if (qone == 1) {
+					System.out.println(
+							"You find that there is words written in a language you have never seen before, one of the words say ungith and next to it is a blade.");
+					System.out.println(
+							"You either 1. you take the blade, or 2. leave it where it is and slowly back away");
+					int que = pin.nextInt();
+					if (que == 1) {
+						System.out.println(
+								"You take the blade and all the words on the wall transform into giant spiders, you can either 1. Attack or 2. Defend");
+							int bean = pin.nextInt();
+							if (bean == 1) {
+								System.out.println(
+									"You attack the spiders and kill a few, but they overcome you and eat you alive.");
+								int input = 0;
+							if (bean == 2) {
+								System.out.println(
+										"You block and parry their attacks, which gave you a chance to kill them. After you kill them a door opens into the second room.");
+								System.out.println(
+										"A mysterious stone lights up and says, 'Thank you traveler for setting me free from those spiders, I will now aid you on your journey.'");
+								break;
+							}
+						}
+					if (que == 2) {
+						System.out.println(
+									"You leave the blade alone and find a red book in the corner, the title says do not read me.");
+						System.out.println("1. You can rip the book in half or 2. You can read the book.");
+						}
+							int quo = pin.nextInt();
+							if (quo == 1) {
+								System.out.println(
+									"You rip the book in half and light fills the room. The light condenses into a glowing, speaking stone.");
+								System.out.println(
+									" It says,  'Hello mysterious traveler, I am here to aid you on your journey into the next room’");
+								break;
+						}
+							if (quo == 2) {
+								System.out.println(
+									"You read the book and it says DIE on every single page, then you turn around and see every kind of nightmare you could imagine.");
+								System.out.println("Together, the monsters slowly torture you until you're dust");
+						}
+					}
+
+				}
+			}
+		}
+	}
+}
